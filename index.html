@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CornerStoreFood - Food For All | Fast Delivery in Kampala</title>
+    <meta name="description" content="CornerStoreFood - Fast food delivery in Kampala. Burgers, Pizza, Chicken, Desserts. Order via WhatsApp in under 30 mins.">
+    <meta property="og:title" content="CornerStoreFood - Food For All">
+    <meta property="og:description" content="Fresh meals delivered in Kampala under 30 minutes">
+    <meta property="og:image" content="./images/BGburgerimage.jpg">
+    <link rel="icon" href="./images/WhatsApplogo2.jpg" type="image/jpg">
+    <link rel="stylesheet" href="css/personalweb.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#hero">
+                    <img src="./images/WhatsApplogo2.jpg" alt="CornerStoreFood Logo" class="logo-img">
+                </a>
+            </div>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button class="order-btn" id="openCartBtn">ORDER NOW
+                <span class="cart-badge" id="cartBadge">0</span>
+            </button>
+
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+        <div class="slideshow">
+            <div class="slide" style="background-image: url('./images/BGburgerimage.jpg');"></div>
+            <div class="slide" style="background-image: url('./images/BGpizzaimage.jpg');"></div>
+            <div class="slide" style="background-image: url('./images/Cobb-Salad.jpg');"></div>
+            <div class="slide" style="background-image: url('./images/BGdessertimage.jpg');"></div>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="brand-name">CornerStoreFood</p>
+            <h1>Crave. Order. Enjoy.</h1>
+            <p class="hero-subtitle">Fresh, hot meals delivered in under 30 minutes. <br>Your favorite local flavors, one tap away.</p>
+            <a href="#menu" class="hero-btn">
+                <span>Order Now</span>
+                <svg class="arrow" viewBox="0 0 24 24">
+                    <path d="M8 5l8 7-8 7" fill="none" stroke="currentColor" stroke-width="2"/>
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about-section" id="about">
+        <div class="about-container">
+            <div class="about-text">
+                <h2>About CornerStoreFood</h2>
+                <p>At CornerStoreFood, we believe that great food brings people together. Founded in 2020, our journey started in a small kitchen with a passion for using fresh, locally-sourced ingredients to create mouthwatering meals that satisfy every craving.</p>
+                <p>Whether you're craving a hearty breakfast, a quick lunch, or a gourmet dinner, we're here to deliver convenience without compromising on taste.</p>
+                <div class="mission-box">
+                    <h3>Our Mission</h3>
+                    <ul>
+                        <li>Provide fresh, high-quality meals at affordable prices.</li>
+                        <li>Support local farmers and sustainable practices.</li>
+                        <li>Deliver exceptional service with every order.</li>
+                    </ul>
+                </div>
+                <a href="#menu" class="about-btn">Explore Our Menu</a>
+            </div>
+            <div class="about-image">
+                <img src="./images/team.jpg" alt="Our passionate team" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- MENU SECTION -->
+    <section class="menu-section" id="menu">
+        <div class="menu-container">
+            <div class="menu-header">
+                <h2>Our Delicious Menu</h2>
+                <p>Freshly made, delivered hot to your door</p>
+            </div>
+
+            <div class="menu-grid">
+                <div class="food-card" data-name="Classic Beef Burger" data-price="25000">
+                    <div class="food-image">
+                        <img src="./images/burger.jpg" alt="Classic Burger" loading="lazy">
+                        <span class="badge">Best Seller</span>
+                    </div>
+                    <div class="food-info">
+                        <h3>Classic Beef Burger</h3>
+                        <p>Juicy beef patty, cheddar, lettuce, tomato, and our signature sauce.</p>
+                        <div class="food-meta">
+                            <span class="price">UGX 25,000</span>
+                            <span class="rating">5 stars (4.8)</span>
+                        </div>
+                        <button class="add-to-cart">
+                            <span class="btn-text">Add to Cart</span>
+                            <span class="loader"></span>
+                            <span class="checkmark">Checkmark</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="food-card" data-name="Margherita Pizza" data-price="35000">
+                    <div class="food-image">
+                        <img src="./images/pizza.jpg" alt="Margherita Pizza" loading="lazy">
+                    </div>
+                    <div class="food-info">
+                        <h3>Margherita Pizza</h3>
+                        <p>Fresh mozzarella, tomato sauce, basil on a crispy thin crust.</p>
+                        <div class="food-meta">
+                            <span class="price">UGX 35,000</span>
+                            <span class="rating">4 stars (4.5)</span>
+                        </div>
+                        <button class="add-to-cart">
+                            <span class="btn-text">Add to Cart</span>
+                            <span class="loader"></span>
+                            <span class="checkmark">Checkmark</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="food-card" data-name="Grilled Chicken Platter" data-price="30000">
+                    <div class="food-image">
+                        <img src="./images/chicken.jpg" alt="Grilled Chicken" loading="lazy">
+                    </div>
+                    <div class="food-info">
+                        <h3>Grilled Chicken Platter</h3>
+                        <p>Tender grilled chicken with roasted veggies and garlic rice.</p>
+                        <div class="food-meta">
+                            <span class="price">UGX 30,000</span>
+                            <span class="rating">5 stars (4.9)</span>
+                        </div>
+                        <button class="add-to-cart">
+                            <span class="btn-text">Add to Cart</span>
+                            <span class="loader"></span>
+                            <span class="checkmark">Checkmark</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="food-card" data-name="Creamy Alfredo Pasta" data-price="28000">
+                    <div class="food-image">
+                        <img src="./images/pasta.jpg" alt="Creamy Pasta" loading="lazy">
+                    </div>
+                    <div class="food-info">
+                        <h3>Creamy Alfredo Pasta</h3>
+                        <p>Rich cream sauce, parmesan, and garlic bread on the side.</p>
+                        <div class="food-meta">
+                            <span class="price">UGX 28,000</span>
+                            <span class="rating">4 stars (4.6)</span>
+                        </div>
+                        <button class="add-to-cart">
+                            <span class="btn-text">Add to Cart</span>
+                            <span class="loader"></span>
+                            <span class="checkmark">Checkmark</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="food-card" data-name="Fresh Garden Salad" data-price="18000">
+                    <div class="food-image">
+                        <img src="./images/salad.jpg" alt="Fresh Garden Salad" loading="lazy">
+                    </div>
+                    <div class="food-info">
+                        <h3>Fresh Garden Salad</h3>
+                        <p>Mixed greens, cherry tomatoes, cucumber, and balsamic dressing.</p>
+                        <div class="food-meta">
+                            <span class="price">UGX 18,000</span>
+                            <span class="rating">4 stars (4.4)</span>
+                        </div>
+                        <button class="add-to-cart">
+                            <span class="btn-text">Add to Cart</span>
+                            <span class="loader"></span>
+                            <span class="checkmark">Checkmark</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="food-card" data-name="Chocolate Lava Cake" data-price="22000">
+                    <div class="food-image">
+                        <img src="./images/dessert.jpg" alt="Chocolate Lava Cake" loading="lazy">
+                        <span class="badge">New</span>
+                    </div>
+                    <div class="food-info">
+                        <h3>Chocolate Lava Cake</h3>
+                        <p>Warm chocolate cake with molten center, served with vanilla ice cream.</p>
+                        <div class="food-meta">
+                            <span class="price">UGX 22,000</span>
+                            <span class="rating">5 stars (5.0)</span>
+                        </div>
+                        <button class="add-to-cart">
+                            <span class="btn-text">Add to Cart</span>
+                            <span class="loader"></span>
+                            <span class="checkmark">Checkmark</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-cta">
+                 <a href="menu.html" class="view-full-menu">View Full Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-section" id="contact">
+        <div class="contact-container">
+            <div class="contact-header">
+                <h2>Get in Touch</h2>
+                <p>We'd love to hear from you!</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-form">
+                    <form action="https://formspree.io/f/xkgjjbza" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <input type="text" name="_gotcha" style="display:none">
+                        <button type="submit" class="send-btn">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="info-item">
+                        <span class="icon-circle">
+                            <img src="./images/phone-icon.png" alt="Phone">
+                        </span>
+                        <p>+256 789 499 442</p>
+                    </div>
+                    <div class="info-item">
+                        <span class="icon-circle">
+                            <img src="./images/email-icon.png" alt="Email">
+                        </span>
+                        <p>info@cornerstorefood.com</p>
+                    </div>
+                    <div class="info-item">
+                        <span class="icon-circle">
+                            <img src="./images/location-icon.png" alt="Location">
+                        </span>
+                        <p>Plot 12, Kampala Road<br>Kampala, Uganda</p>
+                    </div>
+                    <div class="info-item">
+                        <span class="icon-circle">
+                            <img src="./images/clock-icon.png" alt="Clock">
+                        </span>
+                        <p>Open Daily<br>8:00 AM - 10:00 PM</p>
+                    </div>
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.310097826337!2d32.582500014753!3d0.31370009999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbbca8c8b3a2f%3A0x9b5a5a5a5a5a5a5a!2sKampala%2C%20Uganda!5e0!3m2!1sen!2sug!4v1698765432100!5m2!1sen!2sug" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CHECKOUT SECTION -->
+    <section class="checkout-section" id="checkout">
+        <div class="checkout-container">
+            <div class="checkout-header">
+                <h2>Checkout</h2>
+                <p>Complete your order in seconds!</p>
+            </div>
+
+            <div class="checkout-content">
+                <div class="order-summary">
+                    <h3>Your Order</h3>
+                    <div id="checkoutItems"></div>
+                    <div class="checkout-total">
+                        <span>Total:</span>
+                        <span id="checkoutTotal">UGX 0</span>
+                    </div>
+                </div>
+
+                <div class="customer-form">
+                    <h3>Delivery Details</h3>
+                    <form id="checkoutForm">
+                        <div class="form-group">
+                            <input type="text" id="customerName" placeholder="Your Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="customerPhone" placeholder="Phone Number (e.g. 0700123456)" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="customerAddress" rows="3" placeholder="Delivery Address" required></textarea>
+                        </div>
+                        <button type="submit" class="whatsapp-send-btn" id="sendToWhatsApp">
+                            <img src="./images/whatsapp-icon.png" alt="WhatsApp" class="whatsapp-icon">
+                            Send Order via WhatsApp
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CART MODAL -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h3>Your Cart</h3>
+                <button class="close-cart" id="closeCartBtn">X</button>
+            </div>
+            <div class="cart-items" id="cartItems"></div>
+            <div class="cart-footer">
+                <div class="subtotal">
+                    <span>Subtotal:</span>
+                    <span id="subtotal">UGX 0</span>
+                </div>
+                <button class="checkout-btn" id="goToCheckout">Proceed to Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- FLOATING CART BUTTON -->
+    <button class="floating-cart" id="floatingCartBtn">
+        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="9" cy="21" r="1.5"></circle>
+            <circle cx="20" cy="21" r="1.5"></circle>
+            <path d="M1 1h4l2.5 12h13l3-8H6"></path>
+        </svg>
+        <span class="floating-cart-badge" id="floatingCartBadge">0</span>
+    </button>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        let cart = [];
+        const deliveryFee = 5000;
+        const freeDeliveryMin = 50000;
+        const waNumber = "256789499442";
+
+        const cartModal = document.getElementById('cartModal');
+        const openCartBtn = document.getElementById('openCartBtn');
+        const floatingCartBtn = document.getElementById('floatingCartBtn');
+        const closeCartBtn = document.getElementById('closeCartBtn');
+        const cartItemsContainer = document.getElementById('cartItems');
+        const subtotalEl = document.getElementById('subtotal');
+        const goToCheckoutBtn = document.getElementById('goToCheckout');
+
+        function openCart() {
+            cartModal.classList.add('active');
+            renderCart();
+        }
+
+        openCartBtn.addEventListener('click', openCart);
+        floatingCartBtn.addEventListener('click', openCart);
+
+        closeCartBtn.addEventListener('click', () => cartModal.classList.remove('active'));
+        cartModal.addEventListener('click', (e) => {
+            if (e.target === cartModal) cartModal.classList.remove('active');
+        });
+
+        goToCheckoutBtn.addEventListener('click', () => {
+            cartModal.classList.remove('active');
+            document.getElementById('checkout').scrollIntoView({ behavior: 'smooth' });
+            renderCheckout();
+        });
+
+        document.querySelectorAll('.add-to-cart').forEach(button => {
+            button.addEventListener('click', function () {
+                const card = this.closest('.food-card');
+                const name = card.dataset.name;
+                const price = parseInt(card.dataset.price);
+
+                this.classList.add('loading');
+                this.disabled = true;
+
+                const existingItem = cart.find(item => item.name === name);
+                if (existingItem) {
+                    existingItem.quantity++;
+                } else {
+                    cart.push({ name, price, quantity: 1 });
+                }
+
+                setTimeout(() => {
+                    this.classList.remove('loading');
+                    this.classList.add('success');
+                    setTimeout(() => {
+                        this.classList.remove('success');
+                        this.disabled = false;
+                    }, 800);
+                }, 800);
+
+                renderCart();
+                floatingCartBtn.classList.add('pulse');
+                setTimeout(() => floatingCartBtn.classList.remove('pulse'), 600);
+            });
+        });
+
+        function renderCart() {
+            cartItemsContainer.innerHTML = '';
+            let subtotal = 0;
+            let totalItems = 0;
+
+            if (cart.length === 0) {
+                cartItemsContainer.innerHTML = '<p class="empty-cart">Your cart is empty</p>';
+            } else {
+                cart.forEach((item, index) => {
+                    const itemTotal = item.price * item.quantity;
+                    subtotal += itemTotal;
+                    totalItems += item.quantity;
+
+                    const itemEl = document.createElement('div');
+                    itemEl.classList.add('cart-item');
+                    itemEl.innerHTML = `
+                        <div class="item-info">
+                            <h4>${item.name}</h4>
+                            <p>UGX ${item.price.toLocaleString()}</p>
+                        </div>
+                        <div class="item-controls">
+                            <button class="qty-btn" data-action="decrease" data-index="${index}">-</button>
+                            <span class="quantity">${item.quantity}</span>
+                            <button class="qty-btn" data-action="increase" data-index="${index}">+</button>
+                            <button class="remove-item" data-index="${index}">Remove</button>
+                        </div>
+                    `;
+                    cartItemsContainer.appendChild(itemEl);
+                });
+            }
+
+            subtotalEl.textContent = `UGX ${subtotal.toLocaleString()}`;
+            updateBadge(totalItems);
+        }
+
+        function renderCheckout() {
+            const checkoutItems = document.getElementById('checkoutItems');
+            const checkoutTotal = document.getElementById('checkoutTotal');
+            let subtotal = 0;
+            let totalItems = 0;
+
+            checkoutItems.innerHTML = '';
+            cart.forEach(item => {
+                const itemTotal = item.price * item.quantity;
+                subtotal += itemTotal;
+                totalItems += item.quantity;
+                const div = document.createElement('div');
+                div.className = 'checkout-item';
+                div.innerHTML = `<span>${item.name} × ${item.quantity}</span><span>UGX ${itemTotal.toLocaleString()}</span>`;
+                checkoutItems.appendChild(div);
+            });
+
+            const delivery = subtotal < freeDeliveryMin ? deliveryFee : 0;
+            const finalTotal = subtotal + delivery;
+
+            checkoutItems.innerHTML += `<div class="checkout-item"><span>Delivery Fee</span><span>${subtotal < freeDeliveryMin ? 'UGX 5,000' : 'FREE'}</span></div>`;
+            checkoutTotal.innerHTML = `<strong>Grand Total: UGX ${finalTotal.toLocaleString()}</strong>`;
+
+            updateBadge(totalItems);
+        }
+
+        function updateBadge(count) {
+            const badge = document.getElementById('cartBadge');
+            const floatingBadge = document.getElementById('floatingCartBadge');
+            if (count > 0) {
+                badge.textContent = count;
+                badge.classList.add('show');
+                floatingBadge.textContent = count;
+                floatingBadge.classList.add('show');
+            } else {
+                badge.classList.remove('show');
+                floatingBadge.classList.remove('show');
+            }
+        }
+
+        document.getElementById('checkoutForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const name = document.getElementById('customerName').value.trim();
+            const phone = document.getElementById('customerPhone').value.trim();
+            const address = document.getElementById('customerAddress').value.trim();
+
+            if (!name || !phone || !address) {
+                alert('Please fill all fields');
+                return;
+            }
+
+            const sendBtn = document.getElementById('sendToWhatsApp');
+            sendBtn.innerHTML = '<img src="./images/whatsapp-icon.png" class="whatsapp-icon"> Sending...';
+            sendBtn.disabled = true;
+
+            let subtotal = 0;
+            cart.forEach(item => subtotal += item.price * item.quantity);
+            const delivery = subtotal < freeDeliveryMin ? deliveryFee : 0;
+            const finalTotal = subtotal + delivery;
+
+            let message = `NEW ORDER - CornerStoreFood\n\nOrder Details:\n`;
+            cart.forEach(item => {
+                message += `• ${item.name} × ${item.quantity} = UGX ${(item.price * item.quantity).toLocaleString()}\n`;
+            });
+            message += `\nSubtotal: UGX ${subtotal.toLocaleString()}\n`;
+            message += `Delivery: ${delivery > 0 ? 'UGX 5,000' : 'FREE (over UGX 50,000)'}\n`;
+            message += `Grand Total: UGX ${finalTotal.toLocaleString()}\n\n`;
+            message += `Customer: ${name}\nPhone: ${phone}\nAddress: ${address}\n\n`;
+            message += `Time: ${new Date().toLocaleString('en-UG')}\nThank you!`;
+
+            const encoded = encodeURIComponent(message);
+            window.open(`https://wa.me/${waNumber}?text=${encoded}`, '_blank');
+
+            setTimeout(() => {
+                alert("Order sent successfully! We'll contact you soon.");
+                cart = [];
+                renderCart();
+                renderCheckout();
+                document.getElementById('checkoutForm').reset();
+                sendBtn.innerHTML = '<img src="./images/whatsapp-icon.png" class="whatsapp-icon"> Send Order via WhatsApp';
+                sendBtn.disabled = false;
+            }, 2000);
+        });
+
+        cartItemsContainer.addEventListener('click', (e) => {
+            const index = parseInt(e.target.dataset.index);
+            if (isNaN(index)) return;
+
+            if (e.target.classList.contains('qty-btn')) {
+                if (e.target.dataset.action === 'increase') cart[index].quantity++;
+                else if (e.target.dataset.action === 'decrease' && cart[index].quantity > 1) cart[index].quantity--;
+                renderCart();
+                renderCheckout();
+            }
+
+            if (e.target.classList.contains('remove-item')) {
+                cart.splice(index, 1);
+                renderCart();
+                renderCheckout();
+            }
+        });
+
+        // Mobile menu
+        document.getElementById('hamburger').addEventListener('click', function () {
+            document.getElementById('navLinks').classList.toggle('active');
+            this.classList.toggle('open');
+        });
+
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('navLinks').classList.remove('active');
+                document.getElementById('hamburger').classList.remove('open');
+            });
+        });
+
+        // Active nav link
+        const navLinks = document.querySelectorAll('.nav-links a');
+        function updateActiveNav() {
+            let currentSection = '';
+            const sections = ['hero', 'about', 'menu', 'contact'];
+
+            sections.forEach(sectionId => {
+                const section = document.getElementById(sectionId);
+                if (section) {
+                    const rect = section.getBoundingClientRect();
+                    if (rect.top <= 150 && rect.bottom >= 150) {
+                        currentSection = '#' + sectionId;
+                    }
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === currentSection) {
+                    link.classList.add('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', updateActiveNav);
+        document.addEventListener('DOMContentLoaded', updateActiveNav);
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                navLinks.forEach(l => l.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    </script>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <img src="./images/WhatsApplogo2.jpg" alt="CornerStoreFood Logo" class="footer-logo">
+                <p>Delicious meals, delivered with love.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p>Phone +256 700 123 456</p>
+                <p>Email info@cornerstorefood.com</p>
+                <p>Location Plot 12, Kampala Road<br>Kampala, Uganda</p>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="https://wa.me/256789499442" target="_blank"><img src="./images/whatsapp-icon.png" alt="WhatsApp"></a>
+                    <a href="https://instagram.com" target="_blank"><img src="./images/instagram-icon.png" alt="Instagram"></a>
+                    <a href="https://facebook.com" target="_blank"><img src="./images/facebook-icon.png" alt="Facebook"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 CornerStoreFood. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
